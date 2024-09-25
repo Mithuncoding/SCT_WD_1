@@ -1,0 +1,67 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for menu items */
+.nav-item a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffeb3b;
+    border-radius: 4px;
+}
+
+/* Change navbar background on scroll */
+.scrolled {
+    background-color: #333;
+}
+
+/* Section Styles for Demonstration */
+section {
+    height: 100vh;
+    padding-top: 80px; /* To prevent content from being hidden behind the navbar */
+    text-align: center;
+    color: #fff;
+}
+
+#home { background-color: #1abc9c; }
+#about { background-color: #3498db; }
+#services { background-color: #9b59b6; }
+#contact { background-color: #e74c3c; }
+
+.scrolled .nav-item a {
+    color: #fff;
+}
